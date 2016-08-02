@@ -1,9 +1,4 @@
 Walmart.com Training
 ====================
 
-Collection of `cheats` for several IT tools.
-
-# Infrastructure
-
-## [Docker][Docker.md] - https://www.docker.com/
-##### BUILD SHIP RUN
+## [Docker](https://github.com/fpgentil/wm_training/blob/master/Docker.md) - https://www.docker.com/
