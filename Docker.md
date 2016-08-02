@@ -56,8 +56,8 @@ $ docker images
 $ docker pull ubuntu | $ docker run ubuntu -i -t ubuntu /bin/bash
 
 ----------------- Dentro do container ------------------
-$ cat /etc/issue
-$ ps -ef
+$$ cat /etc/issue
+$$ ps -ef
 
 (Linux) CTRL + D -> Mata o container
 (Linux) CTRL + P + Q -> Mantém o container ativo
@@ -100,9 +100,9 @@ $ docker exec <container_id> /etc/init.d/nginx stop
 
 #### Links
 ```
-$ docker run --it -p 8080:80 --name web1 fpgentil/ubuntu-nginx:1.0 /bin/bash
+$ docker run -it -p 8080:80 --name web1 fpgentil/ubuntu-nginx:1.0 /bin/bash
 
-$ docker run --it --name web2 --link web1:web1 fpgentil/ubuntu-nginx:1.0 /bin/bash
+$ docker run -it --name web2 --link web1:web1 fpgentil/ubuntu-nginx:1.0 /bin/bash
 $$ /etc/init.d/nginx start
 $$ ping web1
 ```
