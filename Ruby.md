@@ -52,6 +52,20 @@ end
 ```
 
 #### or || && and
+or, and => fluxo de controle
+&&, || => operações true/false
+```
+foo = 42 && foo / 2
+foo = 42 and foo / 2
+
+foo = get_foo or raise "get_foo falhou"
+
+valor = 1
+foo = valor || 2
+
+valor2 = nil
+foo2 = valor2 || 2
+```
 
 #### ||=
 ```
@@ -68,7 +82,7 @@ puts another_name
 hash = { key: 'value' }
 ```
 
-### Array
+#### Array
 ```
 arr = [1, 2, 3]
 
