@@ -40,4 +40,4 @@ edit_article GET    /articles/:id/edit(.:format) articles#edit
 # JSON API
 
 * http://jsonapi.org/
-* ![Json schema](/files/json_schema)
+* [Json schema](/files/json_schema)
