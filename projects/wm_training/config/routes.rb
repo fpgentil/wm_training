@@ -1,6 +1,10 @@
 Rails.application.routes.draw do
-  # resources(:deliveries, { only: :index })
+  root "home#index"
   resources :deliveries, only: :index do
-    get 'teste', on: :collection
+    get :detalhes
   end
 end
+
+# resources(:deliveries, {only: :index}) do
+#   get(:detalhes, {on: :collection})
+# end
