@@ -1,3 +1,13 @@
 <h1>Hello, <%= @variavel %></h1>
 
-<%= link_to "Detalhes", delivery_detalhes_path(@delivery_id) %>
+<%= form_tag(search_deliveries_path, method: :get) do %>
+  <%= text_field_tag 'delivery_number' %>
+  <%= submit_tag "Buscar" %>
+<% end %>
+
+<% if @response %>
+  <br/>
+  Status da entrega: <%= @response["status"] %>
+  <br/>
+  <%= link_to "Detalhes de #{@response["number"]}", delivery_detalhes_path(@delivery_id) %>
+<% end %>
